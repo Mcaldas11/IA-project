@@ -20,11 +20,15 @@ Testamos modelos de Regressão Linear, Ridge e Random Forest.
 *   **Conclusão**: O Random Forest apresentou o erro mais baixo, sendo o mais robusto para prever variações salariais.
 
 ### 2. Previsão de Saída (Classificação)
-Comparamos Regressão Logística e Random Forest.
-*   **Melhor Modelo**: Logistic Regression
+Comparamos Regressão Logística e Random Forest, ambos utilizando a técnica **SMOTE** para balanceamento de dados.
+*   **Melhor Modelo**: Random Forest Classifier (com SMOTE)
 *   **Accuracy**: 86%
-*   **F1-Score (Classe Attrition=Yes)**: 0.49
-*   **Conclusão**: Embora a Accuracy seja igual, a Regressão Logística identificou melhor os funcionários em risco de sair (maior Recall e F1-score para a classe positiva).
+*   **F1-Score Final (Weighted)**: **0.85**
+*   **Conclusão**: O Random Forest com SMOTE provou ser o modelo mais equilibrado, mantendo uma precisão elevada e melhorando significativamente a identificação de funcionários em risco de sair.
+
+## 📄 Documentação Detalhada
+Para uma explicação detalhada de cada célula do código, gráficos e decisões técnicas, consulte o ficheiro:
+👉 `DOCUMENTACAO_TECNICA.md`
 
 ## 🛠️ Como Executar
 
