@@ -1,6 +1,6 @@
 # Documentação Técnica - IA Project 2025/2026
 
-Este documento explica detalhadamente o fluxo de trabalho realizado no `notebook.ipynb`, a lógica por trás das decisões e o que os gráficos nos dizem.
+Este documento explica detalhadamente o fluxo de trabalho realizado no `Group4_notebook.ipynb`, a lógica por trás das decisões e o que os gráficos nos dizem.
 
 ---
 
@@ -42,5 +42,5 @@ Este documento explica detalhadamente o fluxo de trabalho realizado no `notebook
 *   **Resultado:** Alcançou um **F1-score global de 0.85**. É o modelo mais equilibrado entre precisão e capacidade de deteção.
 
 ## 6. Exportação (Pickle)
-*   **O que faz:** Guarda os modelos treinados em ficheiros `.pkl`.
+*   **O que faz:** Guarda os modelos treinados nos ficheiros `Group4_pipeline_regression.pkl` e `Group4_pipeline_classification.pkl`.
 *   **Lógica:** Permite que os modelos sejam usados no futuro ou numa aplicação web sem ter de treinar tudo de novo.

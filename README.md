@@ -6,10 +6,11 @@ Este projeto utiliza técnicas de Machine Learning para analisar dados de funcio
 
 ## 🚀 Estrutura do Projeto
 
-*   `notebook.ipynb`: Notebook principal com toda a análise exploratória (EDA), pré-processamento e treino de modelos.
+*   `Group4_notebook.ipynb`: Notebook principal com toda a análise exploratória (EDA), pré-processamento e treino de modelos.
+*   `Group4_pipeline_regression.pkl`: Pipeline do modelo de regressão treinado.
+*   `Group4_pipeline_classification.pkl`: Pipeline do modelo de classificação treinado.
 *   `employee_data/`: Pasta contendo o dataset `employee_data.csv`.
 *   `AI-Project-2526.pdf`: Enunciado/documentação do projeto.
-*   `check_results.py`: Script auxiliar para validação rápida dos resultados.
 
 ## 📊 Resumo dos Resultados
 
@@ -28,16 +29,16 @@ Comparamos Regressão Logística e Random Forest, ambos utilizando a técnica **
 
 ## 📄 Documentação Detalhada
 Para uma explicação detalhada de cada célula do código, gráficos e decisões técnicas, consulte o ficheiro:
-👉 `DOCUMENTACAO_TECNICA.md`
+👉 `documentação.md`
 
 ## 🛠️ Como Executar
 
 1.  Certifique-se de ter o Python instalado.
 2.  Instale as dependências necessárias:
     ```bash
-    pip install pandas numpy matplotlib seaborn scikit-learn
+    pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn
     ```
-3.  Abra o `notebook.ipynb` num ambiente Jupyter ou VS Code e execute as células sequencialmente.
+3.  Abra o `Group4_notebook.ipynb` num ambiente Jupyter ou VS Code e execute as células sequencialmente.
 
 ---
 *Projeto desenvolvido no âmbito da disciplina de Inteligência Artificial.*
