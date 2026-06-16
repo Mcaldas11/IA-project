@@ -1,6 +1,6 @@
 # Documentação Técnica - IA Project 2025/2026
 
-Este documento explica detalhadamente o fluxo de trabalho realizado no `Group4_notebook.ipynb`, a lógica por trás das decisões e o que os gráficos nos dizem.
+Este documento explica detalhadamente o fluxo de trabalho realizado no `G1_notebook.ipynb`, a lógica por trás das decisões e o que os gráficos nos dizem.
 
 ---
 
@@ -13,7 +13,7 @@ Este documento explica detalhadamente o fluxo de trabalho realizado no `Group4_n
 *   **O que mostra:** A idade média ronda os 35-40 anos. O salário (`MonthlyIncome`) está muito concentrado em valores baixos, com poucos funcionários a ganhar salários de topo.
 *   **Lógica:** Ajuda a perceber se existem anomalias nos dados.
 
-### 2.2. Boxplots (Outliers)
+## 2.2. Boxplots (Outliers)
 *   **O que mostra:** Identificamos valores "outliers" no salário e nos anos de carreira. São funcionários com salários muito acima da média.
 *   **Lógica:** Não os removemos porque são casos reais (diretores/gestores séniores) que o modelo de regressão precisa de aprender.
 
@@ -42,5 +42,6 @@ Este documento explica detalhadamente o fluxo de trabalho realizado no `Group4_n
 *   **Resultado:** Alcançou um **F1-score global de 0.85**. É o modelo mais equilibrado entre precisão e capacidade de deteção.
 
 ## 6. Exportação (Pickle)
-*   **O que faz:** Guarda os modelos treinados nos ficheiros `Group4_pipeline_regression.pkl` e `Group4_pipeline_classification.pkl`.
+*   **O que faz:** Guarda os modelos treinados nos ficheiros `G1_pipeline_regression.pkl` e `G1_pipeline_classification.pkl`.
+
 *   **Lógica:** Permite que os modelos sejam usados no futuro ou numa aplicação web sem ter de treinar tudo de novo.
