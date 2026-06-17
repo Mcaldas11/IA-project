@@ -83,4 +83,13 @@ Embora o XGBoost tenha mostrado resultados promissores, a sua complexidade não 
 *   **Porquê:** Permite que estes modelos sejam carregados instantaneamente em qualquer aplicação Python (como um servidor web ou script de automação) sem necessidade de reprocessar os dados originais ou treinar novamente, o que poupa tempo e recursos computacionais.
 
 ---
-**Conclusão:** O fluxo de trabalho adotado priorizou a robustez (Pipelines), a honestidade dos dados (manutenção de outliers) e a eficácia em dados desequilibrados (SMOTE), resultando em modelos prontos para produção.
+
+## 9. Prevenção de Overfitting e Regularização
+Após uma auditoria aos resultados iniciais (que apresentavam um score irreal de 0.96 no avaliador), foram aplicadas as seguintes correções:
+*   **Limitação da Profundidade:** Definimos `max_depth=10` para evitar que as árvores memorizassem ruído.
+*   **Amostras por Folha:** Aumentámos `min_samples_leaf` para garantir generalização.
+*   **Ajuste de Pesos:** Substituímos o SMOTE por `class_weight='balanced'`, o que resultou num modelo mais estável para detetar a classe minoritária sem gerar tantos falsos positivos por overfitting.
+*   **Validação Real:** O modelo agora reporta um F1-Score mais realista no conjunto de teste interno, garantindo que funcionará bem com dados novos.
+
+---
+**Conclusão:** O fluxo de trabalho adotado priorizou a robustez (Pipelines), a honestidade dos dados (manutenção de outliers) e a eficácia em dados desequilibrados, resultando em modelos prontos para produção.
