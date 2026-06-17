@@ -37,7 +37,7 @@ Para uma explicação detalhada de cada célula do código, gráficos e decisõe
 1.  Certifique-se de ter o Python instalado.
 2.  Instale as dependências necessárias:
     ```bash
-    pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn
+    pip install pandas numpy matplotlib seaborn scikit-learn imbalanced-learn xgboost
     ```
 3.  Abra o `G1_notebook.ipynb` num ambiente Jupyter ou VS Code e execute as células sequencialmente.
 
